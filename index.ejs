@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Read the footer</h1>
+            <p><%= tagline %></p>
+            <ul>
+                <% mascots.forEach(function(mascot) { %>
+                    <li>
+                        <strong><%= mascot.name %></strong>
+                        representing <%= mascot.organization %>, born <%= mascot.birth_year %>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+        <img src="https://media.discordapp.net/attachments/648667043083845653/808452004799709204/image0-4-2.gif" alt="no image found" width="400" height="300">
+        <img src="https://i.pinimg.com/originals/65/dd/55/65dd555265ccfa7c52c62e38742279c3.jpg" alt="no image found" width="400" height="400">
+
+
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
